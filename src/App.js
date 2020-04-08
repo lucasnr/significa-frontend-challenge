@@ -7,8 +7,8 @@ import GlobalStyle from './styles/GlobalStyle';
 export default function App() {
 	return (
 		<Router>
-			<Routes />
 			<GlobalStyle />
+			<Routes />
 		</Router>
 	);
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { DebounceInput } from 'react-debounce-input';
 import { MdSearch } from 'react-icons/md';
 
 import {
@@ -33,14 +34,16 @@ export default function HomePage() {
 	return (
 		<Container>
 			<Logo />
+
 			<SearchBar>
 				<label htmlFor="search">
 					<MdSearch size={22} />
 				</label>
-				<input
+
+				<DebounceInput
+					debounceTimeout={450}
 					id="search"
 					placeholder="Search movies..."
-					value={value}
 					onChange={(e) => setValue(e.target.value)}
 				/>
 			</SearchBar>

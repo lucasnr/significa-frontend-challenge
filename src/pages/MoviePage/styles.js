@@ -15,7 +15,7 @@ export const GoBackButton = styled.button`
 	display: block;
 	margin: 1rem 0px;
 	padding: 0px;
-	transition: 0.15s ease;
+	transition: all 0.15s ease;
 
 	&:hover {
 		color: #fff;

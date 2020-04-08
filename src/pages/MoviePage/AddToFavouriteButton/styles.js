@@ -10,7 +10,7 @@ export const Container = styled.button`
 	font-size: 1rem;
 	margin-top: 1rem;
 	padding: 0.5rem;
-	transition: 0.15s ease;
+	transition: all 0.15s ease;
 
 	@media (min-width: 576px) {
 		margin-left: 1rem;
